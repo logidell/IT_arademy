@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>입력 폼 만들기!</title>
+    <style>
+        div,
+        h1,
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>입사 지원서</h1>
+    <h2>필수 정보</h2>
+
+    <!-- div, 블럭화(영역묶음) 태그-->
+    <div>
+        <!-- 문자 입력 -->
+        <label>이름:
+        </label>
+        <input type="text" />
+    </div>
+
+    <div>
+        <!-- 날짜 입력 -->
+        <label>생년월일:
+        </label>
+        <input type="date" />
+    </div>
+
+    <div>
+        <!-- 선택 입력 -->
+        <label>성별:
+        </label>
+        <select>
+            <option value="male">Male</option>
+            <option value="female" selected="selected">Female</option>
+        </select>
+    </div>
+
+    <!-- 긴 문장 입력 -->
+    <h2>개발자는 왜?</h2>
+    <div>
+        <label for="message">이유를여기다적자하면</label><br>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+    </div>
+
+    <!-- 체크박스 -->
+    <h2>사용해본 것들</h2>
+    <div>
+        <input type="checkbox" name="useit" value="html/css" id="html/css">html/css
+        <input type="checkbox" name="useit" value="javascript" id="javascript">javascript
+        <input type="checkbox" name="useit" value="C/C++" id="C/C++">C/C++
+        <input type="checkbox" name="useit" value="python" id="python">python
+        <input type="checkbox" name="useit" value="JAVA" id="JAVA">JAVA
+    </div>
+
+    <!-- 라디오 버튼 -->
+    <h2>희망 부서</h2>
+    <div>
+        <input type="radio" name="front-end" value="simple" id="simple"> front-end
+        <input type="radio" name="back-end" value="simple" id="simple"> back-end
+        <input type="radio" name="full-stack" value="simple" id="simple"> full-stack
+    </div>
+
+    <div>
+        <input type="submit" value="sumbit">
+        <input type="reset" value="all-reset">
+
+    </div>
+</body>
+
+</html>

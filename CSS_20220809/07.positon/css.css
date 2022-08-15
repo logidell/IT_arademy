@@ -1,0 +1,139 @@
+html {
+    background-color: rgb(127, 124, 130);
+}
+
+body {
+    font-family: Tahoma, sans-serif;
+    font-size: 87%;
+}
+
+.container {
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(240, 217, 255);
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+
+}
+
+header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #000000;
+}
+
+header h1 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 165%;
+}
+
+header p {
+    margin: 0;
+}
+
+.site-nav {
+    margin-top: 20px;
+}
+
+.site-nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.site-nav li {
+    list-style: none;
+    float: left;
+    margin-right: 5px;
+}
+
+.site-nav a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 3px solid rgb(191, 162, 219);
+    border-bottom: none;
+}
+
+.site-nav a:hover {
+    background-color: rgb(127, 124, 130);
+    /* 마우스 올렸을 때 색이 바뀌는  */
+}
+
+.content-area {
+    border-top: 3px solid rgb(127, 124, 130);
+    border-bottom: 3px solid rgb(127, 124, 130);
+}
+
+.main-area {
+    width: 66%;
+    float: left;
+    padding-right: 40px;
+    box-sizing: border-box;
+    border-top: 2px solid rgb(191, 162, 219);
+
+}
+
+.sidebar {
+    width: 32%;
+    float: left;
+    background-color: rgb(191, 162, 219);
+    padding: 20px 40px;
+    box-sizing: border-box;
+    font-size: 76%;
+}
+
+footer {
+    text-align: center;
+    font-size: 85%;
+    color: rgb(0, 0, 0);
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+    zoom: 1;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.image-banner {
+    position: relative;
+    left: 10px;
+    bottom: 10px;
+    /* relative 상대좌표 */
+    /* 글자, 사진의 기준 */
+}
+
+.image-banner img {
+    display: block;
+}
+
+/* 이미지가 inline 이기때문에 block으로 바꾼다. */
+
+.banner-description {
+    position: absolute;
+    /* 절대좌표로 위치변경. 그 기준은 benner 의 relative가 기준이 됨. 
+    원래 사진 밑의 영역에 위치하는 것*/
+    bottom: 0px;
+    left: 0;
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, .65);
+    padding: 15px 25px;
+}

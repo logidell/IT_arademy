@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css float</title>
+    <style>
+        html {
+            background-color: rgb(247, 236, 222);
+        }
+
+        body {
+            font-family: Tahoma, sans-serif;
+            font-size: 87%;
+        }
+
+        .container {
+            width: 940px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgb(127, 124, 130);
+            padding-left: 40px;
+            padding-right: 40px;
+            box-sizing: border-box;
+        }
+
+        header {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            color: #000000b7;
+        }
+
+        header h1 {
+            margin: 0;
+            font-weight: normal;
+            font-size: 165%;
+        }
+
+        header p {
+            margin: 0;
+        }
+
+        .content-area {
+            border-top: 3px solid rgb(127, 124, 130);
+            border-bottom: 3px solid rgb(127, 124, 130);
+        }
+
+        .main-area {
+            width: 66%;
+            float: left;
+            padding-right: 40px;
+            box-sizing: border-box;
+        }
+
+        .sidebar {
+            width: 34%;
+            float: left;
+            background-color: rgb(84, 186, 185);
+            padding: 20px 40px;
+            box-sizing: border-box;
+            font-size: 85%;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 85%;
+            color: rgb(0, 0, 0);
+            padding-bottom: 20px;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Website Title</h1>
+            <p>Website slogan included here.</p>
+        </header>
+        <div class="contant-area">
+            <main class="main-area">
+                <p>This is main. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Excepturi deleniti quod numquam? Quam, facilis impedit? Quam possimus numquam
+                    commodi culpa, corporis blanditiis eaque harum quaerat ratione animi magnam!
+                    Quas, a.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus quo quam
+                    expedita vero adipisci similique deleniti fugit maiores odio quas repellat
+                    neque, veritatis molestiae accusamus, porro accusantium temporibus tempora
+                    sapiente!</p>
+            </main>
+            <aside class="sidebar">
+                <p>This is sidebar. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Asperiores est modi amet nesciunt repellendus quis maiores expedita distinctio
+                    deserunt fugiat, sit laboriosam aspernatur labore rem dolore hic nulla laborum
+                    qui.</p>
+            </aside>
+            <div class="fix" style="clear:both"></div>
+        </div>
+
+
+        <footer>
+            <p>&copy; 2021 - This is the footer.</p>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="auto">
+    <title>form input</title>
+</head>
+
+<body>
+    <form>
+        <label>
+            1st name
+            <input type="password">
+            <input type="text,number" name="1st">
+            <!--서버전송하기위한 타입-->
+        </label>
+
+        <label for="last name">name</label>
+        <input type="text" name="last name" id="last name">
+        <!-- for의 값과 id값이 같을 때 사용하는 방법 -->
+
+        <button>확인</button>
+        <button type="submit">sumbit</button>
+        <!-- 서버전송타입-->
+        <input type="submit" value="login">
+
+        <input type="reset">
+
+        <br>
+    </form>
+    <br>
+    <br>
+    <br>
+    <!-- 예제 -->
+    <form>
+        <!-- Text -->
+        <div>
+            <label for="name">이름</label><br>
+            <input type="text" id="name" name="name" value="1st value">
+        </div>
+
+        <!-- Email -->
+        <div>
+            <label for="email">이메일</label><br>
+            <input required type="email" name="email" id="email" placeholder="메일주소를 작성하세요">
+        </div>
+        <!-- required 꼭 작성해야할 필요가 있을때 쓰는 태그  -->
+
+        <!-- Textarea -->
+        <div>
+            <label for="message">메세지</label><br>
+            <textarea name="message" id="message" cols="25" rows="5"></textarea>
+        </div>
+
+
+
+        <!-- Select +option -->
+        <div>
+            <label for="gender">성별</label>
+            <select name="gender" id="gender">
+                <option value="male">Male</option>
+                <option value="female" selected="selected">Female</option>
+                <!-- selected 기본으로 설정해두는 태그 -->
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+
+
+        <!-- Number -->
+        <div>
+            <label for="age">나이</label><br>
+            <input type="number" name="age" id="age">
+        </div>
+
+
+
+        <!-- Date -->
+        <div>
+            <label for="bithdate">생년월일</label><br>
+            <input type="date" name="birthdate" id="birthdate">
+        </div>
+
+
+
+        <!-- Radio name이 같음 -->
+        <div>
+            <label>멤버쉽</label>
+            <!-- name 속성은 서버로 보내질 값 앞에 붙음 -->
+            <input type="radio" name="membership" value="simple" id="simple">심플
+            <input type="radio" name="membership" value="standard" id="standard">스탠다드
+            <input type="radio" name="membership" value="super" id="super" checked="checked">슈퍼
+        </div>
+
+
+        <!-- Checkbox 다중 선택 가능 -->
+        <div>
+            <label>I Like</label>
+            <!-- name 속성은 서버로 보내질 값 앞에 붙음 -->
+            <input type="checkbox" name="like1" value="bike" id="bike">오토바이
+            <input type="checkbox" name="like2" value="car" id="car">자동차
+            <input type="checkbox" name="like3" value="boat" id="boat">보트
+            <input type="checkbox" name="like4" value="뚜벅이" id="뚜벅이">뚜벅이 뚜벅뚜벅
+        </div>
+
+
+        <!-- Input submit -->
+        <input type="submit" value="제출">
+        <!-- Button submit -->
+        <!-- <button type="submit">Submit</button> -->
+        <button type="reset">리셋</button>
+    </form>
+
+</body>
+
+</html>

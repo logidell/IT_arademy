@@ -1,0 +1,13 @@
+8/11
+1.SQL-Database
+2.Oracle 오라클
+3.MySQL 8.x 설치
+4.HeidiSQL 설치
+5.MariaDB vs MySQL
+ - SUN(java) -> MySQL 인수
+ - Oracle -> SUN 인수
+6.ch02까지 진도.
+
+
+
+

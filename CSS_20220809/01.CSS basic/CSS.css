@@ -1,0 +1,22 @@
+body {
+    /* css 내부 태그 */
+    font-family: cursive;
+    background-color: rgb(218, 255, 255);
+}
+
+/* 클래스 선택자 .male은 clss중.male인 것을 선택한것이다. */
+.male {
+    color: rgb(96, 0, 116);
+}
+
+.femail {
+    color: aquamarine;
+}
+
+ul {
+    list-style: none;
+}
+
+#ceo {
+    background-color: rgb(0, 137, 250);
+}
