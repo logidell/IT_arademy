@@ -1,0 +1,22 @@
+ body {
+     background: #333;
+ }
+
+ .box {
+     font-size: 200px;
+     width: 200px;
+     height: 200px;
+     background: transparent;
+     position: relative;
+     /* 애니메이션 시작*/
+     animation-name: animate2;
+     /* 이름 */
+     animation-duration: 10s;
+     /* 시간 */
+     animation-iteration-count: infinite;
+     /* 횟수 */
+     animation-fill-mode: initial;
+     /* 마지막 상태 : backwards : */
+     animation-direction: alternate;
+     /* 진행방향  alternate (왕복) normal (편도) revers (거꾸로) */
+ }

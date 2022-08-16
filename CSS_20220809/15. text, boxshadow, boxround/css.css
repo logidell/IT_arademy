@@ -1,0 +1,101 @@
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5rem;
+}
+
+h1.a {
+    /* 가로 | 세로 | color */
+    text-shadow: 0.5rem 0.5rem steelblue;
+    /* rem 글자크기 단위 0.2rem = 3px */
+}
+
+h1.b {
+    /* 가로 | 세로 | 번짐 */
+    text-shadow: 0.4rem 0.3rem 0.5rem steelblue;
+}
+
+h1.c {
+    /* 글자가 흰색일때 쉐도우로 나타냄 */
+    color: #fff;
+    text-shadow: 0.2rem 0.2rem 0.3rem rgb(77, 61, 97);
+}
+
+h1.d {
+    /* 음수일때 반대쪽 */
+    text-shadow: -0.8rem -0.12rem 0.7rem steelblue;
+}
+
+.container {
+    display: flex;
+}
+
+/* .box { */
+/* padding: 1rem; */
+/* margin: 1rem; */
+
+/* 색 나타내는 법 - 1. 색의 키워드 
+        -2. rgb(0,0,0); red / green / blue 3원색 0~255까지
+        -3. rgba(0,0,0,100) red / green / blue / alpha  3원색+ 투명함정도(opacity)
+        -4. 16진수 컬러코드  (#6EE5A3 / #70D2B4 / #46BEFF #FFFFFF) & 16진수 컬러코드 줄임 (#FFF)
+        - 모두 컬러 코드 찾으면 나오니 딱히 외워두지 않아도 괜찮음, 자주 쓰는것만 외워도 될 듯.
+    
+    */
+/* background: rgb(118, 177, 211); */
+/* color: #fff; */
+/*   가로  |  세로  | color */
+/* box-shadow: 10px 10px teal; */
+
+
+/*   가로  |  세로  | 번짐정도 | color */
+/* box-shadow: 5px 5px 50px teal; */
+
+
+
+/* 음수값 적용시 */
+/* box-shadow: -5px -5px 20px teal; */
+
+
+/*   가로  |  세로  | 번짐정도 | 번짐거리 | color */
+/* box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, 0.3); */
+
+
+/* 멀티 박스 쉐도우 적용 */
+/* box-shadow: inset 1px 1px 20px teal, 10px 10px 20px rgba(48, 48, 28, 0.418); */
+/* border-radius: 30px; */
+
+/* inset 박스 안으로 적용되는 속성   */
+
+/* box redius : ~px :  박스 끝 모서리  둥글게*/
+
+body {
+    background: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* vh,vw 화면 비례 % */
+}
+
+.box {
+    background: white;
+    width: 300px;
+    height: 300px;
+    /* Transform - rotate, scale, skew */
+    /* transform: rotate(5deg); */
+    /* transform: skew(25deg); */
+    transition: all 1s ease-in-out;
+}
+
+.box:hover {
+    /* transform: rotate(45deg); */
+    /* transform: skew(25deg); */
+    /* transform: scale(2); */
+    border-radius: 15%;
+    background-color: rgba(128, 74, 60, 0.808);
+    /* transform: translateY(100px); */
+    transform: translateX(-100px);
+    /* x & y */
+    /* transform: translate(100px, 100px); */
+    /* transform: translate3d(100px, 100px, 100px); */
+    transform: scale(0.5), rotate(45deg), translate(200px 200px);
+}

@@ -1,0 +1,8 @@
+flex box 레이아웃 정리 다시 하기 
+주로 신텍스 위주
+https://heropy.blog/2018/11/24/css-flexible-box/ flexible box 블로그 
+https://studiomeal.com/archives/197 flexible box 블로그 (그림)
+https://velog.io/@kysung95/%EC%A7%A4%EB%A7%89%EA%B8%80-attribute%EC%99%80-property%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90 attribute와 property의 차이
+
+https://poiemaweb.com/css3-animation css animaition
+https://heropy.blog/2019/08/17/css-grid/

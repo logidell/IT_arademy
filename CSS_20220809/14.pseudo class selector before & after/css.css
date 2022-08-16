@@ -1,0 +1,45 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: #333;
+    color: #fff;
+}
+
+.is-required::before {
+    content: '💞';
+    /* win+; : 이모티콘 */
+    color: white;
+    padding-right: 2px;
+}
+
+.is-required::after {
+    content: '💕';
+    color: white;
+    padding-left: 2px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+header h1 {
+    font-size: 6rem;
+    margin: 1rem;
+}
+
+/* 가상요소에 background 이미지를 준 것. 기본 검은background와 겹쳐보인다? 오버레이한것.  */
+header::before {
+    content: '';
+    background: url('https://source.unsplash.com/1600x900/?nature,water') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}

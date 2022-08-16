@@ -5,16 +5,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css.css">
+    <title>플렉스박스</title>
+    <style>
+        html,
+        body {
+            background-color: #ffeead;
+            margin: 10px;
+        }
+
+        .container>div {
+            padding: 10px;
+            text-align: center;
+            font-size: 2em;
+            color: #ffeead;
+        }
+
+        .home {
+            order: 1;
+            flex: 1;
+            margin-right: auto;
+            background-color: #96ceb4;
+        }
+
+        .search {
+            order: 3;
+            flex: 2;
+            background-color: #ff6f69;
+        }
+
+        .logout {
+            order: 2;
+            flex: 1;
+            background-color: skyblue;
+        }
+
+        .container {
+            /* 부모태그에서 flex 사용 */
+            display: flex;
+            /* 가로 정렬하는 방법 */
+            justify-content: flex-end;
+            /* 자동 줄내림 (기본이 노랩)*/
+            flex-wrap: wrap;
+            border: 5px solid #ffcc5c;
+        }
+    </style>
 </head>
 
 <body>
-    <nav class="container">
+    <div class="container">
         <div class="home">Home</div>
         <div class="search">Search</div>
         <div class="logout">Logout</div>
-    </nav>
     </div>
 </body>
 
