@@ -6,3 +6,10 @@ https://velog.io/@kysung95/%EC%A7%A4%EB%A7%89%EA%B8%80-attribute%EC%99%80-proper
 
 https://poiemaweb.com/css3-animation css animaition
 https://heropy.blog/2019/08/17/css-grid/
+
+개발시에는 파이어폭스가 가끔 좋아보임. 그리드, 레이아웃, 테이블을 ui로 지원한다고 함. 한번 써보는 것도 좋은듯 
+https://nykim.work/59
+
+
+https://hi098123.tistory.com/323  nth child 
+https://freefrontend.com/css-spinners/
